@@ -1,0 +1,54 @@
+.forecast {
+  position: relative;
+  margin-bottom: 20px;
+
+  &-data {
+    width: 60%;
+  }
+
+  &-row {
+    margin-bottom: 10px;
+
+    &__title {
+      font-size: 20px;
+      color: #427188;
+    }
+
+    &__description {
+      font-size: 20px;
+      color: #2196f3;
+    }
+  }
+
+  &-subrow {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+
+    &__title {
+      font-size: 18px;
+      color: #dc9833;
+    }
+
+    &__description {
+      font-size: 18px;
+      color: #2196f3;
+    }
+  }
+
+  &-logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    height: 100%;
+    width: 50%;
+    opacity: .4;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+}

@@ -1,0 +1,37 @@
+<div class="forecast">
+  <div class="forecast-data">
+    <div class="forecast-row">
+      <span class="forecast-row__title">Conditions: </span>
+      <span class="forecast-row__description">{{ forecast.conditions }}</span>
+    </div>
+    <div class="forecast-row">
+      <span class="forecast-row__title">Temperature </span>
+      <div class="forecast-subrow">
+        <span class="forecast-subrow__title">Day: </span>
+        <span class="forecast-subrow__description">
+          {{ forecast.temperature.day.min }}C - {{ forecast.temperature.day.max }}C
+        </span>
+      </div>
+      <div class="forecast-subrow">
+        <span class="forecast-subrow__title">Night: </span>
+        <span class="forecast-subrow__description">
+          {{ forecast.temperature.night.min }}C - {{ forecast.temperature.night.max }}C
+        </span>
+      </div>
+    </div>
+    <div class="forecast-row">
+      <span class="forecast-row__title">Wind </span>
+      <div class="forecast-subrow">
+        <span class="forecast-subrow__title">Speed: </span>
+        <span class="forecast-subrow__description">{{ forecast.wind.speed }}mps</span>
+      </div>
+      <div class="forecast-subrow">
+        <span class="forecast-subrow__title">Direction: </span>
+        <span class="forecast-subrow__description">{{ forecast.wind.direction }}</span>
+      </div>
+    </div>
+  </div>
+  <div class="forecast-logo">
+    <img src="./assets/img/{{ forecast.conditions }}.png" [alt]="forecast.conditions">
+  </div>
+</div>
